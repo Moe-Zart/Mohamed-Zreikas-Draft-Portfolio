@@ -76,14 +76,16 @@ nav {
 }
 .contact-link:hover {
   background-color: rgb(23, 156, 156);
+  opacity: unset;
 }
 .row {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+}
+.container{
+  padding: 50px 0;
 }
 .aboutme-info {
   display: flex;
@@ -126,16 +128,60 @@ h1 {
 }
 .aboutme-profile-link {
   font-size: 24px;
-  color:#373737;
+  color: #373737;
   margin: 0 12px;
+  transition: all 300ms ease;
 }
-.aboutme-undrawimg-wrapper{
+a:hover{
+opacity: 0.6;
+}
+.aboutme-undrawimg-wrapper {
   margin-top: 48px;
 }
-.aboutme-undrawimg{
+.aboutme-undrawimg {
   width: 100%;
 }
-#languages{
-  display: flex;
+#languages {
   background-color: rgb(234, 234, 234);
+}
+
+
+.languages-list {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ flex-wrap: wrap;
+}
+.language-icon-img{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.language-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+
+}
+.language-img{
+  width: 100%;
+  max-width: 140px;
+  transition: all 300ms ease;
+}
+.language-icon-img:hover .language-img{
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform:scale(0.85);
+}
+.language-name{
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms ease;
+  font-size: 24px;
+}
+.language-icon-img:hover .language-name {
+transform: scale(1);
 }
