@@ -130,7 +130,33 @@ h1 {
   color: #373737;
   margin: 0 12px;
   transition: all 300ms ease;
+ 
 }
+.fab,.fas{
+ display: inline-block;
+  animation: float 5s ease-in-out infinite;
+}
+.github{
+animation-delay: 1s;
+}
+.mail{
+animation-delay: 2s;
+}
+.resume{
+animation-delay: 3s;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+  transform: translateY(-10px);
+  }
+  100%{
+  transform: translateY(0);
+  }
+}
+
 a:hover {
   opacity: 0.6;
 }
@@ -230,7 +256,7 @@ a:hover {
   max-width: 550px;
   opacity: 0;
   z-index: 3;
-  transition: 450ms,300ms;
+  transition: 450ms, 300ms;
 }
 h3,
 h4,
