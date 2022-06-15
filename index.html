@@ -16,9 +16,11 @@
       <nav>
         <p class="name">Mohamed Zreika</p>
         <ul class="nav-links">
-          <li><a class="nav-link" href="#languages">Languages</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link contact-link" href="#contact">Contact</a></li>
+          <li class="nav-link">
+            <a class="link-hover" href="#languages">Languages</a>
+          </li>
+          <li class="nav-link"><a class="link-hover" href="#projects">Projects</a></li>
+          <li class="nav-link"><a class="contact-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="flex aboutme-page">
@@ -37,24 +39,24 @@
               convenience to positively impact the world.
             </p>
             <ul class="aboutme-profile-links">
-              <li>
+              <li class="aboutme-profile-link-list">
                 <a class="aboutme-profile-link" href=""
-                  ><i class="fab fa-brands fa-linkedin-in"></i
+                  ><i class="fab fa-brands fa-linkedin-in icon"></i
                 ></a>
               </li>
-              <li>
+              <li class="aboutme-profile-link-list">
                 <a class="aboutme-profile-link" href=""
-                  ><i class="fab fa-github github"></i
+                  ><i class="fab fa-github github icon"></i
                 ></a>
               </li>
-              <li>
+              <li class="aboutme-profile-link-list">
                 <a class="aboutme-profile-link" href=""
-                  ><i class="fas fa-envelope mail"></i
+                  ><i class="fas fa-envelope mail icon"></i
                 ></a>
               </li>
-              <li>
+              <li class="aboutme-profile-link-list">
                 <a class="aboutme-profile-link" href=""
-                  ><i class="fas fa-file-pdf resume"></i
+                  ><i class="fas fa-file-pdf resume icon"></i
                 ></a>
               </li>
             </ul>
@@ -161,16 +163,92 @@
               </figure>
             </li>
           </ul>
+          <ul class="project-list">
+            <li class="project">
+              <figure class="project-wrapper">
+                <img
+                  class="project-img"
+                  src="./assets/logo gallery project.png"
+                  alt=""
+                />
+                <div class="project-description">
+                  <h3>Logo Gallery project</h3>
+                  <h4>HTML, CSS</h4>
+                  <p class="project-description-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis velit impedit odit beatae aspernatur accusamus
+                    iste repellat hic fugiat. Rem similique natus cum maxime
+                    quod unde quasi eum in totam!
+                  </p>
+                  <div class="project-description-links">
+                    <a
+                      class="project-description-link"
+                      href="https://github.com/Moe-Zart/Logo-Gallery-Website"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      class="project-description-link"
+                      href="https://moe-zart.github.io/Logo-Gallery-Website/"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </figure>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <footer>
-      <div class="row">
-        <a href="#">
-          <figure>
-            <img src="" alt="" />
+      <div class="row footer-row">
+        <a class="footer-logo-container" href="#">
+          <figure class="footer-logo-figure">
+            <img
+              class="footer-logo"
+              src="./assets/mz logo official 1.png"
+              alt=""
+            />
           </figure>
+          <span class="footer-logo-top top"
+            >Top <i class="fas fa-arrow-up top"></i
+          ></span>
         </a>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link link-hover link-hover-white"
+              href=""
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer-link link-hover link-hover-white"
+              href="https://github.com/Moe-Zart"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer-link link-hover link-hover-white"
+              href="mailto:mohamedzreika03@outlook.com"
+              target="_blank"
+              >Email</a
+            >
+          </li>
+          <li>
+            <a class="footer-link link-hover link-hover-white" href=""
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <p class="footer-p">Copyright © 2022 Mohamed Zreika</p>
       </div>
     </footer>
   </body>
